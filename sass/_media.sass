@@ -1,0 +1,105 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	#content
+		.contact
+			height: auto 
+			.form-right 
+				padding-left: 50px
+// ≥992px
++media-breakpoint-down(md)
+	#header
+		height: 100vh
+
+	#content	
+		.services
+			height: auto
+			margin-top: 0px	
+		.portfolio 
+			height: auto
+			.gallery 
+				a
+					margin: auto
+					margin-top: 30px
+		.about 
+			height: 100%
+			.text-right 
+				text-align: left
+				.text 
+					width: auto
+			.text-left 
+				padding-left: 0px
+				.text 
+					width: auto
+		.team 
+			height: auto 
+// ≥768px
++media-breakpoint-down(sm)
+	#header
+		height: 400px
+		
+		.container	
+			.logo 
+				display: none
+			.nav 
+				li
+					display: block
+					text-align: center
+					margin-top: 10px
+					padding-right: 0px	
+					a 
+						font-size: 30px
+						text-align: center
+		.header-text 
+			display: none
+	
+	#content 
+		.about 
+			display: none
+			padding-top: 50px
+			img
+				display: none
+			.text-right 
+				text-align: left 
+				text-align: center
+				.text 
+					width: auto
+					margin-bottom: 30px
+			.text-left 
+				padding-left: 0px
+				text-align: center
+				.text 
+					width: auto
+					margin-bottom: 30px
+		.cms 
+			height: auto
+		.contact
+			display: none
+		.cms
+			display: none
+	#footer
+		display: none
+// ≥576px
++media-breakpoint-down(xs)
+	#content
+		.team 
+			.footer-text
+				width: auto
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
